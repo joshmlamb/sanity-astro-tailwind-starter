@@ -24,7 +24,9 @@ To get started, follow these steps:
 
 5) Update `.env` with the required details and update the `projectId` and `dataset` values in `astro.config.mjs`. An API token will need to be generated in Sanity with `Viewer` permissions, this can be named as you like.
 
-6) Get building! Visit `/admin` to edit content
+6) Run the build
     ```
     npm run dev
     ```
+
+7) Visit `/admin` to access Sanity Studio, add a post and view the blog at `/blog`

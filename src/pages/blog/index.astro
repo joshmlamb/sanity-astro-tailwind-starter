@@ -1,0 +1,26 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+import type { SanityDocument } from "@sanity/client";
+import { loadQuery } from "../../sanity/lib/load-query";
+
+const { data: posts } = await loadQuery<SanityDocument[]>({
+    query: `*[_type == "post"]`,
+})
+---
+
+<Layout>
+    <div class="mx-auto my-12 px-4 container">
+        <h1 class="mb-6 text-2xl">Blog</h1>
+
+        <ul class="list-disc list-inside">
+            {posts.map(({ title, slug }) => (
+                <li>
+                    <a href={`/blog/${slug.current}`} class="underline underline-offset-4">
+                        {title}
+                    </a>
+                </li>
+            ))}
+        </ul>
+    </div>
+</Layout>
