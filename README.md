@@ -1,4 +1,4 @@
-# Astro + Sanity + Tailwind Starter
+# Sanity + Astro + Tailwind Starter
 
 To get started, follow these steps:
 
