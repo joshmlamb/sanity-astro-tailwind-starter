@@ -9,7 +9,7 @@ To get started, follow these steps:
 
 2) Clone the repository
     ```
-    git clone https://github.com/joshmlamb/astro-sanity-tailwind-starter.git project-name
+    git clone https://github.com/joshmlamb/astro-sanity-tailwind-starter.git
     ```
 
 3) Install dependencies
